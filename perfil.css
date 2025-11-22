@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header img {
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.perfil-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item i {
+    font-size: 1.5rem;
+    color: #AB0827;
+}
+
+.menu-item:hover i {
+    color: #86051d;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f5;
+}
+
+#botao-sair {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #AB0827;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao-sair:hover {
+    background-color: #86051d;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+
+    <!-- Contêiner da imagem -->
+    <div class="image-container">
+        <picture class="top">
+            <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
+            <source media="(max-width: 1200px)" srcset="img/assets/top_m.png" />
+            <img src="img/assets/top_g.png" alt="Imagem Responsiva" />
+        </picture>
+    </div>
+
+    <!-- Contêiner do formulário -->
+    <div class="login-container">
+        <form class="login-form" id="loginForm">
+            <img src="img/assets/logo_gisas.png" alt="Logo Da Gisas" class="logo">
+            
+            <div class="input-container">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="input-container">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Insira sua senha" required minlength="6">
+            </div>
+
+            <button type="submit" class="btn-login">Entrar</button>
+            
+            <p class="signup-link">Esqueceu sua senha? <a href="#">Recuperar senha</a></p>
+            <p class="signup-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </form>
+    </div>
+
+    <!-- Script de validação e integração -->
+    <script src="login.js"></script>
+
+</body>
+</html>

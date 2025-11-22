@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Sobremesa</title>
+    <link rel="stylesheet" href="pedido.css">
+</head>
+<body>
+    <picture class="top">
+        <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
+        <source media="(max-width: 1200px)" srcset="img/assets/top_m.png" />
+        <img src="img/assets/top_g.png" alt="Imagem decorativa do topo" />
+    </picture>
+
+    <div class="container">
+        <!-- Coluna da Foto -->
+        <div class="photo">
+            <img src="img/produtos/BRIGADEIRO.png" alt="Nome da Sobremesa" />
+        </div>
+
+        <!-- Coluna de Informações -->
+        <div class="info">
+            <h2>Nome da Sobremesa</h2>
+            <p>Descrição da Sobremesa</p>
+            <h6>Serve até 1 pessoa</h6>
+            
+            <div class="observacao">
+                <p>Alguma observação?</p>
+                <input type="text" class="box"/>
+            </div>
+            
+            <!-- Botões (ajustados para mobile e desktop) -->
+            <div class="botoes">
+                <button class="btn-small">Visualizar Sacola</button>
+                <button class="btn-large">Adicionar na Sacola</button>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* Importação das fontes personalizadas */
+@font-face {
+    font-family: P01;
+    src: url('fonts/Product Sans Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Cooper;
+    src: url('fonts/Cooper-Black.ttf') format('truetype');
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    padding: 20px 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    font-family: Cooper;
+    color: #2e7d32;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Resumo */
+.resumo div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #eee;
+}
+
+.resumo div:last-child {
+    border-bottom: none;
+}
+
+/* Total */
+.total {
+    font-family: P01;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 15px;
+    color: #AB0827;
+}
+
+/* Botão Confirmar */
+.btn-confirmar {
+    background: #2e7d32;
+    color: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    font-family: P01;
+    font-size: 18px;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn-confirmar:hover {
+    background: #1f6a23;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #999;
+    color: #555;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    background: #eee;
+}

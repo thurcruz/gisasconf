@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+html, body { /* Adicionando para garantir que não haja margem em ambos */
+    height: 100%; /* Define a altura de ambos para 100% */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #AB0827;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contêiner da imagem */
+.image-container {
+    width: 100%;
+    position: relative;
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+/* Imagem do picture */
+.top img {
+    width: 100vw; /* Ocupe 100% da largura da janela de visualização */
+    height: auto;
+    display: block; /* Remove espaços em branco adicionais causados pelo inline */
+}
+
+/* Container do formulário */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 62px; /* Remove o espaço superior do formulário */
+}
+
+/* Centralizando a logo */
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo do formulário */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #AB0827;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: #ab0827;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #ab0827;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .btn-login {
+        font-size: 14px;
+    }
+}

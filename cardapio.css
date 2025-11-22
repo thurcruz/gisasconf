@@ -1,0 +1,132 @@
+/* Importação das fontes personalizadas */
+@font-face {
+    font-family: P01;
+    /* Assumindo que o arquivo está no diretório 'fonts/' */
+    src: url('fonts/Product Sans Bold.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: Cooper;
+    /* Assumindo que o arquivo está no diretório 'fonts/' */
+    src: url('fonts/Cooper-Black.ttf') format('truetype');
+}
+
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+picture.top {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.top img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* Título principal do Cardápio */
+h2 {
+    margin-top: 0;
+    font-family: Cooper;
+    color: #AB0827; /* Cor principal da marca */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+
+
+/* Container da lista de produtos */
+.cardapio_list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 20px; /* Espaçamento entre os produtos */
+    justify-content: center; /* Centraliza os produtos */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do item individual de produto */
+.produto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* 3 itens por linha em telas maiores (ajustado pelo gap) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+
+.produto:hover {
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+}
+
+/* Imagem do produto */
+.produto img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Nome do produto */
+.produto h3 {
+    font-family: P01;
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 5px;
+}
+
+/* Descrição do produto */
+.produto p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Garante que as caixas tenham altura mais consistente */
+}
+
+/* Preço do produto */
+.produto strong {
+    font-family: P01;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #AB0827;
+    padding: 6px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+
+/* Responsividade para tablets e telas menores */
+@media (max-width: 900px) {
+    .produto {
+        width: calc(50% - 20px); /* 2 itens por linha */
+    }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 600px) {
+    .produto {
+        width: 100%; /* 1 item por linha */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

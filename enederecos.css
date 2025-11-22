@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Cooper;
+    src: url('fonts/Cooper-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: P01;
+    src: url('fonts/Product\ Sans\ Bold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+
+body {
+    font-family: Cooper;
+    margin: 0;
+    padding: 0;
+}
+
+.top img {
+    width: 100%;
+}

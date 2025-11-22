@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Título */
+h2 {
+    font-family: Cooper;
+    color: #AB0827;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+
+/* Container de cada item */
+.item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Imagem do item */
+.item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Informações do produto */
+.item div {
+    flex: 1;
+}
+
+.item strong {
+    font-family: P01;
+    font-size: 18px;
+    color: #444;
+}
+
+.item em {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Totalizador */
+.total {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Botão finalizar */
+.btn-finalizar {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #AB0827;
+    color: white;
+    font-family: P01;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.finalizar:hover {
+    opacity: 0.9;
+}
+
+
+
+/* Mensagem sacola vazia */
+.vazia {
+    text-align: center;
+    color: #555;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+
+    .item {
+        flex-direction: row;
+    }
+
+    .item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .btn-finalizar {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* Menu fixo inferior */
+ul {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFE4EB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+ul a {
+    font-family: 'P01';
+    font-size: 12px;
+    font-weight: bold;
+    color: #AB0827;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul img {
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+

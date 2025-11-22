@@ -1,0 +1,169 @@
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Garante que o body ocupe toda a tela */
+  display: flex;
+  flex-direction: column;
+}
+
+.top img {
+  width: 100%;
+}
+
+/* Estrutura do Container */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Faz o container ocupar a altura total da tela */
+  padding: 20px;
+}
+
+/* Coluna da Foto */
+.photo img {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  border-radius: 10px;
+}
+
+/* Coluna de Informações */
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Texto e inputs */
+.info h2 {
+  font-size: 24px;
+}
+
+.info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.info h6 {
+  margin-bottom: 10px;
+}
+.observacao .box {
+  border-radius: 8px;
+  border: 1px solid #999;
+  width: 100%;
+  padding: 30px;
+  font-size: 16px;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-small {
+  flex: 1;
+  max-width: 40%;
+  height: 48px;
+  font-size: 16px;
+  color: white;
+  background: #AB0827;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-large {
+  flex: 2;
+  height: 48px;
+  font-size: 18px;
+  color: white;
+  background: #AB0827;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover nos Botões */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Versão Mobile */
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+      height: auto; /* Para mobile, a altura é ajustável */
+      padding: 10px;
+  }
+
+  .photo img {
+      height: auto; /* Para mobile, a imagem se ajusta automaticamente */
+       /* Limita a altura para ocupar metade da tela */
+      border-radius: 10px;
+  }
+
+  .info {
+      margin-top: 20px;
+      padding: 10px;
+  }
+
+  .botoes {
+      flex-direction: row;
+      gap: 10px;
+  }
+
+  .btn-small {
+      flex: 1;
+  }
+
+  .btn-large {
+      flex: 2;
+  }
+}
+
+ul {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFE4EB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+ul a {
+    font-family: 'P01';
+    font-size: 12px;
+    font-weight: bold;
+    color: #AB0827;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul img {
+    margin-bottom: 16px;
+    align-items: center;
+}

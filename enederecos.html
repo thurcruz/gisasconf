@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enderecos.css">
+    <title>Endereços</title>
+</head>
+<body>
+    <header>
+    <picture class="top">
+        <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
+        <source media="(max-width: 1200px)" srcset="img/assets/top_m.png" />
+        <img src="img/assets/top_g.png" />
+    </picture>
+    
+<form id="addressForm">
+    <label for="address">Endereço:</label>
+    <input type="text" id="address" required>
+    <button type="submit">Salvar Endereço</button>
+</form>
+<h4>Endereços Salvos</h4>
+<ul id="addressList"></ul>
+<script src="enderecos.js" defer></script>
+</header>
+</body>
+</html>

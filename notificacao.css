@@ -1,0 +1,135 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #AB0827;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* IMAGEM DO TOPO */
+.top img {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+/* ===== CONTAINER PRINCIPAL (AGORA FULL WIDTH) ===== */
+.container {
+    width: 100%;
+    background: transparent;
+    padding: 20px 15px 90px; /* espaço para o menu fixo */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ===== TÍTULO ===== */
+header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    color: #AB0827;
+    font-weight: bold;
+}
+
+/* Linha fina abaixo do título */
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+/* ===== NOTIFICAÇÕES ===== */
+.notification {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.notification:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.notification img {
+    width: 58px;
+    height: 58px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Texto da notificação */
+.notification-text h2 {
+    font-size: 1rem;
+    color: #AB0827;
+    font-weight: bold;
+}
+
+.notification-text p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ===== MENU INFERIOR (FIXO) ===== */
+footer {
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #AB0827;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+    .notification {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .notification img {
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+}

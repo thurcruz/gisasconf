@@ -1,0 +1,27 @@
+@font-face { 
+    font-family: P01;
+    src: url('fonts/Product Sans Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Cooper;
+    src: url('fonts/Cooper-Black.ttf') format('truetype');
+}
+body{
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0000;
+
+
+}
+
+.top img {
+    width: 100%;
+}
+
+.h3{
+    font-family: P01;
+    color: #0000;
+    font-size: 12px;
+}

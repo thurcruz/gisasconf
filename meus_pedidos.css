@@ -1,0 +1,81 @@
+/* Importação das fontes personalizadas */
+@font-face {
+    font-family: P01;
+    src: url('fonts/Product Sans Bold.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: Cooper;
+    src: url('fonts/Cooper-Black.ttf') format('truetype');
+}
+
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+/* Título */
+h2 {
+    font-family: Cooper;
+    color: #AB0827;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Container geral */
+.pedido {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    padding: 18px 20px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+    border-left: 6px solid #AB0827;
+}
+
+/* Número do pedido */
+.pedido strong {
+    font-family: P01;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Texto geral */
+.pedido br {
+    line-height: 20px;
+}
+
+/* Status */
+.status {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #AB0827;
+    color: #fff;
+    border-radius: 30px;
+    font-family: P01;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .pedido {
+        width: 92%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .status {
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+}
